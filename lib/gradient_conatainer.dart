@@ -1,5 +1,6 @@
-import 'package:dice_app/styled_text.dart';
+import 'package:dice_app/dice_roller.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 
 const startAlignement = Alignment.topLeft;
@@ -26,8 +27,8 @@ class GradientContainer extends StatelessWidget {
             end: endAlignement
           )
         ),
-        child: const Center(
-          child:  StyledText('Salut tout le monde')
+        child:  Center(
+          child: DiceRoller()
         ),
       )
     );
